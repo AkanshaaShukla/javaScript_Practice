@@ -57,3 +57,53 @@ function userLogin2 (usernames = "Anjali"){
 }
 
 console.log(userLogin2())    //Anjali have just logged in
+
+
+
+function calculateCartPrice (...num1){      // rest operator for giving multiple value
+    return num1   
+}
+
+console.log(calculateCartPrice(200,300,400))    //after writing it as ... we get the array 
+ [200,300,400]
+
+
+function calculateCartPrice2 (val1,val2,...num1){      // after value 1 and value 2 rest all in array
+    return num1   
+}
+
+console.log(calculateCartPrice2(200,300,400,8000))       //[400,8000]
+
+
+//-------------------HOW TO DEFINE OBJECT IN FUNCTIONS-------------------------
+
+
+const user = {
+    username:"histesh",
+    price:156,
+
+}
+
+function handleObject (anyobject){
+    console.log(`Username is ${anyobject.username} and the price is ${anyobject.price}`);
+
+}
+
+handleObject(user)     //Username is histesh and the price is 156
+
+
+handleObject({
+    username:"sam",
+    price : 399       //Username is sam and the price is 399
+})
+
+
+const myNewArray = [200,500,700,800]
+
+function retuenSecondValue (getArrayNow) {
+    return getArrayNow[3]
+
+}
+
+console.log(retuenSecondValue(myNewArray))           //800
+console.log(retuenSecondValue([200,500,700,800]))     //800
