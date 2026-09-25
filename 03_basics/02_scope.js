@@ -68,3 +68,9 @@ console.log(addtwo(5))    // if i put  it above function then i cannot access it
     // how is function declared kept , how are variables treated , how is the final tree is made 
     //where function and variable are kept                     
 
+let name = "Akansha"
+let reverseString = '';
+for (let i = name.length - 1; i >= 0; i--) {
+    reverseString += name[i];
+}
+console.log(reverseString);
